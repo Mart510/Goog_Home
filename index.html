@@ -1,6 +1,12 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
 <style>
-    /* Link styling for font and colour */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+        background-color: #ffffff;
+    }
+/* Link styling for font and colour */
     a{
         color: #222222;
         font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +27,30 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    /* Sign in button */
+    .button {
+        border: none;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        background: #1a73e8;
+        background-color: #1a73e8;
+        margin: 0px,8px;
+        padding: 9px, 23px;
+        min-width: 80px;
+        min-height: 32px;
+        border-radius: 8px;
+        transition-duration: 0.2s;
+    }
+    .button:hover{
+        background-color: #1d1ae8;
+    }
+
+    /* app icon styling */
+    .material-icons{
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
 </style>
 <head>
     <!-- Header, to have links to About Google and Google Store on the left
@@ -30,18 +60,22 @@
         <a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
         <a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a>    
         </div>
+        
         <div><!-- Right align elements-->
         <a href="https://gmail.com">Gmail</a>
-        <a href="https://www.google.co.uk/imghp?hl=en&authuser=0&ogbl">Images</a>    
+        <a href="https://www.google.co.uk/imghp?hl=en&authuser=0&ogbl">Images</a>
+        
+        <!-- 9 dot google apps button -->
+        <span class="material-icons md-36">apps</span>
+
+        <!-- Sign in button -->
+        <button class="button" type="button">Sign in</button>
         </div>
     </div>
-
 </head>
-<style>
-    body {
-        background-color: #ffffff;
-    }
-</style>
+
+<body>
+
 <body>
     
 </body>
