@@ -50,6 +50,77 @@ body {
         display: inline-flex;
         vertical-align: middle;
     }
+    
+    /* Google logo and search bar */
+        .center{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* magic centering no matter the size */
+        transform: translate(-50%, -50%);
+                }
+    */
+    /* Flexbox for logo */
+    .logflexi{
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    /* Form styling */
+    input[type=text]{
+        width: 400px;
+        border-radius: 24px;
+        border-color: #222222;
+        height: 24px;
+        border-width: 1px;
+        
+    }
+   /* Layout made with Layotit v2 */
+   .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-template-areas:
+    "Spacer image Spacer1"
+    "Input Input Input"
+    ". . .";
+}
+
+.Spacer { grid-area: Spacer; }
+
+.Spacer1 { grid-area: Spacer1; }
+
+.Input { grid-area: Input; }
+
+.image {
+
+  justify-self: center;
+  align-self: end;
+  grid-area: image;
+}
+
+/* Search and I'm Feeling lucky styling */
+.searchbutton{
+    border: none;
+    color: #222222;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    background-color: #f8f9fa;
+    margin: 0px,8px;
+    padding: 9px, 23px;
+    min-width: 80px;
+    min-height: 32px;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+
+       
+}
+.searchbutton:hover{
+        background-color: #b1b2b3;
+}
 
 </style>
 <head>
@@ -73,9 +144,31 @@ body {
         </div>
     </div>
 </head>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <body>
-
-<body>
+    <!-- CSS Grid for center page elements -->
+    <div class="container">
+        <div class="Image"><img src="googlelogo_color_272x92dp.png"></div>
+        <div class="Spacer"></div>
+        <div class="Spacer1"></div>
+        <div class="Input">
+            <input type="text">
+            <br>
+            <br>
+           <div style="text-align: center;"> <!-- Center align to text to make buttons center align on the same row -->
+            <button class="searchbutton" type="button">Google Search</button>
+            <button class="searchbutton" type="button">I&#39m Feeling Lucky</button>
+            </div>
+        </div>
+      </div>
+    
+      
     
 </body>
